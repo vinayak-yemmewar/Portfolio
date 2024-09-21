@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo3.png" type="image/png">
+</head>
+
+<body class="dark-theme">
+    <!-- navbar -->
+    <div class="container">
+        <nav>
+            <h1><span style="color: #1db954;">V</span>inayak</h1>
+            <ul class="nav-links" id="sidemenu">
+                <li><b><a href="#home">Home</a></b></li>
+                <li><b><a href="#about">About</a></b></li>
+                <li><b><a href="#portfolio">Portfolio</a></b></li>
+                <li><b><a href="#contact">Contact</a></b></li>
+                <li><button id="theme-toggle">☀️ Light</button></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <!-- first body -->
+    <section id="home">
+        <div class="section-pic-container">
+            <img src="images/bg.png" alt="Vinayak Yemmewar Profile picture" class="profile-pic1">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello I'm</p>
+            <!-- <h1 class="title"><span style="color: #1db954;">Vinayak</span> Yemmewar <br> -->
+            <h1 class="title">Vinayak Yemmewar <br>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and skilled Full Stack Developer with experience in both front-end and back-end
+                        technologies. My goal is to craft efficient, scalable, and
+                        user-friendly web applications that solve real-world problems. I am always eager to learn new
+                        technologies and improve my skills to contribute effectively to impactful projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br>Javascript, Java, SQL, C, C++</li>
+                            <li><span>FRONTEND TECHNOLOGIES</span><br>ReactJS, Javascript, Bootstrap, HTML, CSS
+                                <!-- JQuery  -->
+                            </li>
+                            <li><span>BACKEND TECHNOLOGIES</span><br>Javascript, Java</li>
+                            <!-- nodeJs  -->
+                            <li><span>DATABASE</span><br>MySql</li>
+                            <!-- mongoDB  -->
+                            <li><span>DEVELOPER TOOLS</span><br>GitHub</li>
+                            <!-- postman -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MCA from MIT College Chh. Sambajinagar</li>
+                            <li><span>2021</span><br>BCA from MGM'S College Nanded</li>
+                            <li><span>2017</span><br>HSC from NSB College Nanded</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>G-Soft Solutions Pvt. Ltd.</span><br>Software Trainee, May 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section ---------------------------------------------------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Amazon Website Clone</h3>
+                        <p>"I have developed a responsive Amazon website clone using HTML and CSS. This project
+                            replicates the core design elements and layout of the Amazon homepage, including a
+                            structured navbar, product listings, and a footer. The clone is styled with modern CSS
+                            techniques to ensure a clean, user-friendly interface, maintaining a focus on visual
+                            consistency and responsive design across various screen sizes."</p>
+                        <a href="https://vinayak-yemmewar.github.io/Amazon-Web-Clone/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Tic Tak Toe Game</h3>
+                        <p>"I developed a fully functional Tic Tac Toe game using HTML, CSS, and JavaScript. The game
+                            allows two players to compete, featuring a simple yet engaging user interface with dynamic
+                            game logic. The JavaScript controls the game mechanics, including player turns, win
+                            detection, and resetting the board, while the CSS ensures a visually appealing and
+                            responsive design."</p>
+                        <a href="https://vinayak-yemmewar.github.io/Tic-Tac-Toe-Game/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Management Of Railway Rest Houses</h3>
+                        <p>I have developed a Management of Railway Rest Houses system using HTML, CSS, JavaScript,
+                            Bootstrap, PHP, and MySQL. This website enables users to book rest houses near railway
+                            stations, providing convenience for travelers to find accommodations close to their
+                            destination. It likely includes features like booking forms, making it a valuable tool for
+                            railway travelers.</p>
+                        <a href="https://github.com/vinayak-yemmewar/Management-Of-Railway-Rest-Houses"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Extra work items that will be hidden initially -->
+                <div class="work">
+                    <img src="images/work-4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Application Tracking System ATS</h3>
+                        <p>I built an Application Tracking System (ATS) where users can paste a job description into a
+                            textarea and upload their resume. The system then compares the resume to the job
+                            description, checking for matching words, and calculates a match percentage to show how
+                            closely the resume aligns with the job requirements. This feature is especially helpful for
+                            job seekers to tailor their resumes to specific job postings.
+                        </p>
+                        <a href="https://vinayak-yemmewar.github.io/Applicant-Tracking-System-ATS-/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Design</h3>
+                        <p>I have designed portfolio using HTML, CSS, and JavaScript showcases your skills and work,
+                            offering an interactive and visually appealing platform for others to learn more about you
+                            and your projects. This design likely includes sections like an About Me, Projects, Skills,
+                            and Contact page, enhanced with JavaScript for interactivity and CSS for styling. Well done!
+                        </p>
+                        <a href="https://vinayak-yemmewar.github.io/Vinayak-Portfolio/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.jpg" alt="">
+                    <div class="layer">
+                        <h3>Register_LoginPage-using_JSP-Servlet-JDBC-MYSQL</h3>
+                        <p>I have created a Registration and Login page using JSP (JavaServer Pages), Servlets, JDBC,
+                            and MySQL database. This application allows users to register by submitting their details,
+                            which are stored in a MySQL database via JDBC (Java Database Connectivity). The combination
+                            of JSP and Servlets ensures seamless
+                            interaction between the front-end user interface and the back-end logic, providing a smooth
+                            and secure user experience.</p>
+                        <a href="https://github.com/vinayak-yemmewar/Register_LoginPage-using_JSP-Servlet-JDBC-MYSQL"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="see-more-btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section ----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> vgyemmewar@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8788551575</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/vinu.gsy/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vinayak-yemmewar/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://www.youtube.com/@explorewithvinu1999" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="CV_vgyemmewar.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2024 © Vinayak Yemmewar. All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Youtuber', 'Web Designer', 'Full Stack Developer'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
