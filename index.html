@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayak Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo3.png" type="image/png">
+</head>
+
+<body class="dark-theme">
+    <!-- navbar -->
+    <div class="container">
+        <nav>
+            <h1><span style="color: #1db954;">V</span>inayak</h1>
+            <ul class="nav-links" id="sidemenu">
+                <li><b><a href="#home">Home</a></b></li>
+                <li><b><a href="#about">About</a></b></li>
+                <li><b><a href="#portfolio">Portfolio</a></b></li>
+                <li><b><a href="#contact">Contact</a></b></li>
+                <li><button id="theme-toggle">☀️ Light</button></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <!-- first body -->
+    <section id="home">
+        <div class="section-pic-container">
+            <img src="images/bg.png" alt="Vinayak Yemmewar Profile picture" class="profile-pic1">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello I'm</p>
+            <!-- <h1 class="title"><span style="color: #1db954;">Vinayak</span> Yemmewar <br> -->
+            <h1 class="title">Vinayak Yemmewar <br>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and skilled Full Stack Developer with experience in both front-end and back-end
+                        technologies. My goal is to craft efficient, scalable, and
+                        user-friendly web applications that solve real-world problems. I am always eager to learn new
+                        technologies and improve my skills to contribute effectively to impactful projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br>Java, JavaScript, C, C++</li>
+                            <li><span>WEB TECHNOLOGIES</span><br>ReactJS, Javascript, HTML, CSS, Bootstrap, Tailwind
+                            </li>
+                            <li><span>BACKEND TECHNOLOGIES</span><br>Spring Framework (Spring core, Spring JDBC, Spring MVC, Spring Boot, RESTful APIs)</li>
+                            <li><span>DATABASE MANAGEMENT</span><br>SQL, MySql</li>
+                            <!-- mongoDB  -->
+                            <li><span>DEVELOPER TOOLS</span><br>Git, GitHub, Postman</li>
+                            <!-- postman -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MCA from MIT College Chh. Sambajinagar</li>
+                            <li><span>2021</span><br>BCA from MGM'S College Nanded</li>
+                            <li><span>2017</span><br>HSC from NSB College Nanded</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>G-Soft Solutions Pvt. Ltd.</span><br>Software Trainee, December 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section ---------------------------------------------------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Explore With Vinu Website</h3>
+                        <p>Explore with Vinu is a dynamic and modern website designed to inspire and guide users
+                            through various travel experiences. Built using HTML, CSS, React, and powered by Vite
+                            for fast development and optimized performance. The site showcases curated travel
+                            content, featuring beautiful destinations, travel tips, and recommendations. With
+                            React's component-based structure, the website is scalable and easy to maintain, while
+                            Vite ensures quick load times and a smooth browsing experience.</p>
+                        <a href="https://vinayak-yemmewar.github.io/Explore-With-Vinu/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Tic Tak Toe Game</h3>
+                        <p>"I developed a fully functional Tic Tac Toe game using HTML, CSS, and JavaScript. The game
+                            allows two players to compete, featuring a simple yet engaging user interface with dynamic
+                            game logic. The JavaScript controls the game mechanics, including player turns, win
+                            detection, and resetting the board, while the CSS ensures a visually appealing and
+                            responsive design."</p>
+                        <a href="https://vinayak-yemmewar.github.io/Tic-Tac-Toe-Game/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Management Of Railway Rest Houses</h3>
+                        <p>I have developed a Management of Railway Rest Houses system using HTML, CSS, JavaScript,
+                            Bootstrap, PHP, and MySQL. This website enables users to book rest houses near railway
+                            stations, providing convenience for travelers to find accommodations close to their
+                            destination. It likely includes features like booking forms, making it a valuable tool for
+                            railway travelers.</p>
+                        <a href="https://github.com/vinayak-yemmewar/Management-Of-Railway-Rest-Houses"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Extra work items that will be hidden initially -->
+                <div class="work">
+                    <img src="images/work-4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Live Latest News Website</h3>
+                        <p>This project is a fast and simple news app built with React and Vite. It fetches and displays
+                            live news articles using the News API, showing headlines, descriptions, and links for more
+                            details. The app highlights essential React skills with a focus on quick loading and
+                            efficient API integration.
+                        </p>
+                        <a href="https://vinayak-yemmewar.github.io/NewsApp/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Quiz Application</h3>
+                        <p>A responsive and interactive Quiz App built with React. Users can answer multiple-choice
+                            questions, navigate through the quiz, and receive real-time feedback on their answers. The
+                            app tracks the user's progress, displays the current question number, and shows the final
+                            score at the end. It also features a reset option for restarting the quiz. Designed to work
+                            smoothly across various devices.
+                        </p>
+                        <a href="https://vinayak-yemmewar.github.io/Quiz-Application/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.jpg" alt="">
+                    <div class="layer">
+                        <h3>Amazon Website Clone</h3>
+                        <p>I have developed a responsive Amazon website clone using HTML and CSS. This project
+                            replicates the core design elements and layout of the Amazon homepage, including a
+                            structured navbar, product listings, and a footer. The clone is styled with modern CSS
+                            techniques to ensure a clean, user-friendly interface, maintaining a focus on visual
+                            consistency and responsive design across various screen sizes.
+                        </p>
+                        <a href="https://vinayak-yemmewar.github.io/Amazon-Web-Clone/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-7.jpg" alt="">
+                    <div class="layer">
+                        <h3>Register_LoginPage-using_JSP-Servlet-JDBC-MYSQL</h3>
+                        <p>I have created a Registration and Login page using JSP (JavaServer Pages), Servlets, JDBC,
+                            and MySQL database. This application allows users to register by submitting their details,
+                            which are stored in a MySQL database via JDBC (Java Database Connectivity). The combination
+                            of JSP and Servlets ensures seamless
+                            interaction between the front-end user interface and the back-end logic, providing a smooth
+                            and secure user experience.</p>
+                        <a href="https://github.com/vinayak-yemmewar/Register_LoginPage-using_JSP-Servlet-JDBC-MYSQL"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="see-more-btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section ----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> vgyemmewar@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8788551575</p>
+                    <div class="social-icon">
+
+                        <a href="https://www.linkedin.com/in/vinayak-yemmewar/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@explorewithvinu1999" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/vinayak-yemmewar" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="CV_vgyemmewar.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2024 © Vinayak Yemmewar. All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Youtuber', 'Web Designer', 'Full Stack Developer'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
